@@ -1,0 +1,11 @@
+C:\Users\James\workspace\csharp\dictionary-practices\dictionarypractice\obj\Debug\netcoreapp3.0\dictionarypractice.csprojAssemblyReference.cache
+C:\Users\James\workspace\csharp\dictionary-practices\dictionarypractice\obj\Debug\netcoreapp3.0\dictionarypractice.AssemblyInfoInputs.cache
+C:\Users\James\workspace\csharp\dictionary-practices\dictionarypractice\obj\Debug\netcoreapp3.0\dictionarypractice.AssemblyInfo.cs
+C:\Users\James\workspace\csharp\dictionary-practices\dictionarypractice\bin\Debug\netcoreapp3.0\dictionarypractice.exe
+C:\Users\James\workspace\csharp\dictionary-practices\dictionarypractice\bin\Debug\netcoreapp3.0\dictionarypractice.deps.json
+C:\Users\James\workspace\csharp\dictionary-practices\dictionarypractice\bin\Debug\netcoreapp3.0\dictionarypractice.runtimeconfig.json
+C:\Users\James\workspace\csharp\dictionary-practices\dictionarypractice\bin\Debug\netcoreapp3.0\dictionarypractice.runtimeconfig.dev.json
+C:\Users\James\workspace\csharp\dictionary-practices\dictionarypractice\bin\Debug\netcoreapp3.0\dictionarypractice.dll
+C:\Users\James\workspace\csharp\dictionary-practices\dictionarypractice\bin\Debug\netcoreapp3.0\dictionarypractice.pdb
+C:\Users\James\workspace\csharp\dictionary-practices\dictionarypractice\obj\Debug\netcoreapp3.0\dictionarypractice.dll
+C:\Users\James\workspace\csharp\dictionary-practices\dictionarypractice\obj\Debug\netcoreapp3.0\dictionarypractice.pdb
