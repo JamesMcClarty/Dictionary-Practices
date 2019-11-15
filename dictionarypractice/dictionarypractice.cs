@@ -73,6 +73,8 @@ namespace dictionarypractice
             { { "word", "screwed" }, { "definition", "slang word for messing up something royally" }, { "part of speech", "verb" }, { "example sentence", "I'm screw if I don't learn this." }
             };
 
+            dictionaryOfWords.Add(screwedWord);
+
             /*
                 Iterate your list of dictionaries and output the data, You can use the two foreach() loops below to help you start your iteration.
 
