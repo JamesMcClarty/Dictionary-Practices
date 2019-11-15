@@ -167,8 +167,21 @@ namespace dictionarypractice
             stocks.Add("GOOGL", "Google");
             stocks.Add("GE", "General Electric Co");
 
-            Dictionary<string, List<decimal>> purchases = new Dictionary<string, List<decimal>>();
-           
+            Dictionary<string, List<double>> purchases = new Dictionary<string, List<double>>();
+            purchases.Add("GM", new List<double>(){1412.12, 3541.32, 3125.75});
+            purchases.Add("CAT", new List<double>(){112.21, 351.90});
+            purchases.Add("GOOGL", new List<double>(){691.78});
+            purchases.Add("GE", new List<double>(){1412.12, 3541.32, 3125.75});
+
+            foreach(KeyValuePair<string, string> stock in stocks){
+                if(purchases.ContainsKey(stock.Key)){
+                    double total = 0;
+                    foreach(double purchase in purchases[stock.Key]){
+                        total += purchase;
+                    }
+                    Console.WriteLine($"The position in {stock.Value} is worth {Math.Round(total,2)}.");
+                }
+            }
         }
     }
 }
