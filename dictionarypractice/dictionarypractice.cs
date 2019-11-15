@@ -120,21 +120,33 @@ namespace dictionarypractice
             { { "name", "Megan" }, { "age", "30" }
             });
 
-             myFamily.Add("mother", new Dictionary<string, string>()
+            myFamily.Add("mother", new Dictionary<string, string>()
             { { "name", "Libbie" }, { "age", "56" }
             });
 
-             myFamily.Add("father", new Dictionary<string, string>()
+            myFamily.Add("father", new Dictionary<string, string>()
             { { "name", "Jim" }, { "age", "68" }
             });
 
-             myFamily.Add("cat", new Dictionary<string, string>()
+            myFamily.Add("cat", new Dictionary<string, string>()
             { { "name", "Tallulah" }, { "age", "2" }
             });
 
-            foreach(KeyValuePair<string, Dictionary<string, string>> member in myFamily){
-               Console.WriteLine($"{member.Value["name"]} is my {member.Key} and her age is {member.Value["age"]}");
+            foreach (KeyValuePair<string, Dictionary<string, string>> member in myFamily)
+            {
+                Console.WriteLine($"{member.Value["name"]} is my {member.Key} and her age is {member.Value["age"]}");
             }
+
+            //***ADVANCED CHALLENGE***-----------------------------------
+
+            Dictionary<string, string> stocks = new Dictionary<string, string>();
+            stocks.Add("GM", "General Motors");
+            stocks.Add("CAT", "Caterpillar");
+            stocks.Add("GOOGL", "Google");
+            stocks.Add("GE", "General Electric Co");
+
+            Dictionary<string, List<decimal>> purchases = new Dictionary<string, List<decimal>>();
+           
         }
     }
 }
