@@ -58,10 +58,10 @@ namespace dictionarypractice
             Dictionary<string, string> excitedWord = new Dictionary<string, string>();
 
             // Add each of the 4 bits of data about the word to the Dictionary
-            excitedWord.Add("word","excited");
-            excitedWord.Add("definition","having, showing, or characterized by a heightened state of energy, enthusiasm, eagerness");
-            excitedWord.Add("part of speech","adjective");
-            excitedWord.Add("example sentence","I am excited to learn C#");
+            excitedWord.Add("word", "excited");
+            excitedWord.Add("definition", "having, showing, or characterized by a heightened state of energy, enthusiasm, eagerness");
+            excitedWord.Add("part of speech", "adjective");
+            excitedWord.Add("example sentence", "I am excited to learn C#");
 
             // Add Dictionary to your `dictionaryOfWords` list
 
@@ -69,11 +69,8 @@ namespace dictionarypractice
 
             // create another Dictionary and add that to the list
 
-            Dictionary<string, string> screwedWord = new Dictionary<string, string>(){
-                {"word", "screwed"},
-                {"definition", "slang word for messing up something royally"},
-                {"part of speech","verb"},
-                {"example sentence", "I'm screw if I don't learn this."}
+            Dictionary<string, string> screwedWord = new Dictionary<string, string>()
+            { { "word", "screwed" }, { "definition", "slang word for messing up something royally" }, { "part of speech", "verb" }, { "example sentence", "I'm screw if I don't learn this." }
             };
 
             /*
@@ -98,7 +95,21 @@ namespace dictionarypractice
 
             //__________________________________________________________________
 
-            
+            Dictionary<string, List<string>> idioms = new Dictionary<string, List<string>>();
+            idioms.Add("Penny", new List<string> { "A", "penny", "for", "your", "thoughts" });
+            idioms.Add("Injury", new List<string> { "Add", "insult", "to", "injury" });
+            idioms.Add("Moon", new List<string> { "Once", "in", "a", "blue", "moon" });
+            idioms.Add("Grape", new List<string> { "I", "heard", "it", "through", "the", "grapevine" });
+            idioms.Add("Murder", new List<string> { "Kill", "two", "birds", "with", "one", "stone" });
+            idioms.Add("Limbs", new List<string> { "It", "costs", "an", "arm", "and", "a", "leg" });
+            idioms.Add("Grain", new List<string> { "Take", "what", "someone", "says", "with", "a", "grain", "of", "salt" });
+            idioms.Add("Fences", new List<string> { "I'm", "on", "the", "fence", "about", "it" });
+            idioms.Add("Sheep", new List<string> { "Pulled", "the", "wool", "over", "his", "eyes" });
+            idioms.Add("Lucifer", new List<string> { "Speak", "of", "the", "devil" });
+
+            foreach(KeyValuePair<string,List<string>> idiom in idioms){
+                Console.WriteLine($"{idiom.Key}: {string.Join(" ", idiom.Value)}");
+            }
         }
     }
 }
