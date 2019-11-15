@@ -137,6 +137,28 @@ namespace dictionarypractice
                 Console.WriteLine($"{member.Value["name"]} is my {member.Key} and her age is {member.Value["age"]}");
             }
 
+            //KeyValuePairs Practices---------------------------------------------
+
+            List<string> planetList = new List<string>() { "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune" };
+
+            List<KeyValuePair<string, string>> probeDestinations = new List<KeyValuePair<string, string>>();
+
+            probeDestinations.Add(new KeyValuePair<string, string>("Viking 1", "Mars"));
+            probeDestinations.Add(new KeyValuePair<string, string>("Mariner 1", "Venus"));
+            probeDestinations.Add(new KeyValuePair<string, string>("Voyager 1", "Jupiter"));
+            probeDestinations.Add(new KeyValuePair<string, string>("Voyager 1", "Saturn"));
+            foreach (string planet in planetList){
+                 List<string> matchingProbes = new List<string>();
+                 foreach(KeyValuePair<string, string> probe in probeDestinations)
+                 {
+                     if(planet == probe.Value){
+                         matchingProbes.Add(probe.Key);
+                     }
+                 }
+                if(matchingProbes.Count != 0)
+                 Console.WriteLine($"{planet}:{String.Join(",",matchingProbes)}");
+            }
+
             //***ADVANCED CHALLENGE***-----------------------------------
 
             Dictionary<string, string> stocks = new Dictionary<string, string>();
