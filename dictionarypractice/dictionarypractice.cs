@@ -107,8 +107,33 @@ namespace dictionarypractice
             idioms.Add("Sheep", new List<string> { "Pulled", "the", "wool", "over", "his", "eyes" });
             idioms.Add("Lucifer", new List<string> { "Speak", "of", "the", "devil" });
 
-            foreach(KeyValuePair<string,List<string>> idiom in idioms){
+            foreach (KeyValuePair<string, List<string>> idiom in idioms)
+            {
                 Console.WriteLine($"{idiom.Key}: {string.Join(" ", idiom.Value)}");
+            }
+
+            //Family Dictionary--------------------------------------------------------------------
+
+            Dictionary<string, Dictionary<string, string>> myFamily = new Dictionary<string, Dictionary<string, string>>();
+
+            myFamily.Add("sister", new Dictionary<string, string>()
+            { { "name", "Megan" }, { "age", "30" }
+            });
+
+             myFamily.Add("mother", new Dictionary<string, string>()
+            { { "name", "Libbie" }, { "age", "56" }
+            });
+
+             myFamily.Add("father", new Dictionary<string, string>()
+            { { "name", "Jim" }, { "age", "68" }
+            });
+
+             myFamily.Add("cat", new Dictionary<string, string>()
+            { { "name", "Tallulah" }, { "age", "2" }
+            });
+
+            foreach(KeyValuePair<string, Dictionary<string, string>> member in myFamily){
+               Console.WriteLine($"{member.Value["name"]} is my {member.Key} and her age is {member.Value["age"]}");
             }
         }
     }
